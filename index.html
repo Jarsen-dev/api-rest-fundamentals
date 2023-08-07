@@ -27,9 +27,18 @@
     <button onclick="loadRandomDogs()">Cambiar perrito</button>
   </section>
 
-  <section id="favouriteDogs">
+  <section id="uploadingDog">
+    <h2>Sube la foto de tu cachorro</h2>
+
+    <form id="uploadingForm">
+      <input id="file" type="file" name="file">
+      <button type="button" onclick="uploadDoggyPhoto()">Subir foto de perrito</button>
+    </form>
   </section>
 
+  <section id="favouriteDogs"></section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
